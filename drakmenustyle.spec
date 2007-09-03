@@ -52,7 +52,7 @@ Icon=drakmenustyle.png
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=GTK;X-MandrivaLinux-System-Configuration;Settings;
+Categories=GTK;X-MandrivaLinux-CrossDesktop;Settings;
 EOF
 
 #install menu icon
