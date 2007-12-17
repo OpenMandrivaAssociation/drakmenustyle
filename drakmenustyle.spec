@@ -14,7 +14,6 @@ Url:      http://www.mandrivalinux.com/en/cvs.php3
 BuildRequires: perl-MDK-Common-devel
 Requires: drakxtools => 10.4.53-1mdv2007.0
 Requires: perl-Gtk2 >= 1.023-1mdk
-BuildRoot: %_tmppath/%name-%version-buildroot
 Provides: menudrake
 Obsoletes: menudrake
 BuildArch: noarch
