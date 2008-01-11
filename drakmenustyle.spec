@@ -36,11 +36,6 @@ rm -fr $RPM_BUILD_ROOT
 %find_lang %name
 
 #install menu
-mkdir -p %buildroot/%_menudir
-cat > %buildroot/%_menudir/drakmenustyle << EOF
-?package(%{name}): needs="x11" icon="drakmenustyle.png" section="System/Configuration/Other" title="Menu Style" longtitle="Menu Style Configuration" command="%_bindir/%name" \
-xdg="true"
-EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-drakmenustyle.desktop << EOF
@@ -75,7 +70,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc COPYING ChangeLog
 %_bindir/*
-%_menudir/drakmenustyle
 %{_datadir}/applications/mandriva-drakmenustyle.desktop
 %_miconsdir/*.png
 %_iconsdir/*.png
