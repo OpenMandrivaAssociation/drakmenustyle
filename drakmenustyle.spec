@@ -57,11 +57,15 @@ install -m644 %SOURCE1 %buildroot/%_miconsdir/drakmenustyle.png
 install -m644 %SOURCE2 %buildroot/%_iconsdir/drakmenustyle.png
 install -m644 %SOURCE3 %buildroot/%_liconsdir/drakmenustyle.png
 
+%if %mdkversion < 200900
 %post
 %update_menus
+%endif
 
+%if %mdkversion < 200900
 %postun
 %clean_menus
+%endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
