@@ -3,7 +3,7 @@
 Summary:  Menu Style Configuration
 Name:     drakmenustyle
 Version:  0.14.1
-Release:  %mkrel 1
+Release:  %mkrel 2
 Source0:  %name-%version.tar.bz2
 Source1:  drakmenustyle16.png
 Source2:  drakmenustyle32.png
