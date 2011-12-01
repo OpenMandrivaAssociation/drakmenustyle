@@ -29,7 +29,7 @@ Drakmenustyle enables to configure the menu style under Mandriva Linux.
 perl -pi -e 's/^use strict/#use strict/g' drakmenustyle
 
 %install
-rm -fr $RPM_BUILD_ROOT
+rm -fr %{buildroot}
 %makeinstall_std
 
 #install lang
@@ -37,8 +37,8 @@ rm -fr $RPM_BUILD_ROOT
 
 #install menu
 
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
-cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-drakmenustyle.desktop << EOF
+mkdir -p %{buildroot}%{_datadir}/applications
+cat > %{buildroot}%{_datadir}/applications/mandriva-drakmenustyle.desktop << EOF
 [Desktop Entry]
 Name=Menu Style Configuration
 Comment=Menu Style Configuration
@@ -68,7 +68,7 @@ install -m644 %SOURCE3 %buildroot/%_liconsdir/drakmenustyle.png
 %endif
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %defattr(-,root,root)
