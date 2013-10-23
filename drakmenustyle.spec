@@ -1,7 +1,7 @@
 Summary:	Menu Style Configuration
 Name:		drakmenustyle
 Version:	0.14.1
-Release:	8
+Release:	9
 License:	GPLv2
 Group:		System/Configuration/Other
 Url:		http://www.mandrivalinux.com/en/cvs.php3
