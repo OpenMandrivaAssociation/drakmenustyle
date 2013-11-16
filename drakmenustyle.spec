@@ -1,10 +1,10 @@
 Summary:	Menu Style Configuration
 Name:		drakmenustyle
 Version:	0.14.1
-Release:	10
+Release:	11
 License:	GPLv2
 Group:		System/Configuration/Other
-Url:		http://www.mandrivalinux.com/en/cvs.php3
+Url:		%{disturl}
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	drakmenustyle16.png
 Source2:	drakmenustyle32.png
@@ -17,7 +17,7 @@ Requires:	perl-Gtk2
 Provides:	menudrake
 
 %description
-Drakmenustyle enables to configure the menu style under Mandriva Linux.
+Drakmenustyle enables to configure the menu style under %{distribution}.
 
 %prep
 %setup -q
