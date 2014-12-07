@@ -1,7 +1,7 @@
 Summary:	Menu Style Configuration
 Name:		drakmenustyle
 Version:	0.14.1
-Release:	17
+Release:	18
 License:	GPLv2
 Group:		System/Configuration/Other
 Url:		%{disturl}
